@@ -13,6 +13,9 @@
 
 
 ## 使用方法
+```
+implementation 'me.wenchieh:shadowLayout:0.8.0'
+```
 ```xml
     <me.wenchieh.shadowlayout.ShadowLayout
       xmlns:app="http://schemas.android.com/apk/res-auto"
