@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="ShadowLayout">
+    <attr format="dimension" name="shadowLeft"/>
+    <attr format="dimension" name="shadowRight"/>
+    <attr format="dimension" name="shadowTop"/>
+    <attr format="dimension" name="shadowBottom"/>
+    <attr format="dimension" name="radius"/>
+    <attr format="dimension" name="blur"/>
+  </declare-styleable>
+</resources>

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'org.jetbrains.dokka'
+apply plugin: 'maven-publish'
+apply from: 'deploy.gradle'
+
+android {
+  compileSdkVersion 27
+
+  sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+  }
+  defaultConfig {
+    //    minSdkVersion 16
+    //    targetSdkVersion 27
+  }
+
+  lintOptions {
+    abortOnError false
+  }
+}
+
+dokka {
+  outputFormat = 'html'
+  outputDirectory = "$buildDir/javadoc"
+}
+
+tasks.withType(Javadoc) {
+  options {
+    encoding "UTF-8"
+    charSet 'UTF-8'
+    links "http://docs.oracle.com/javase/7/docs/api"
+  }
+}
+
+dependencies {
+  compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+  compileOnly 'com.android.support:appcompat-v7:27.1.1'
+  testImplementation 'junit:junit:4.12'
+  androidTestImplementation 'com.android.support.test:runner:1.0.2'
+  androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
