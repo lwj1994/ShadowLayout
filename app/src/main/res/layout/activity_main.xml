@@ -106,6 +106,12 @@
       android:layout_marginTop="10dp"
       android:layout_margin="40dp"
       app:blur="20dp"
+      app:radius="5dp"
+      app:shadowBottom="10dp"
+      app:shadowTop="20dp"
+      app:shadowLeft="15dp"
+      app:shadowRight="15dp"
+      app:shadowColor="@color/colorPrimary"
       >
     <TextView
         android:layout_width="match_parent"

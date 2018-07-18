@@ -178,6 +178,9 @@ class ShadowLayout @JvmOverloads constructor(context: Context, set: AttributeSet
             R.styleable.ShadowLayout_blur -> {
               blur = array.getDimension(it, defValue)
             }
+            R.styleable.ShadowLayout_shadowColor -> {
+              color = array.getColor(it, color)
+            }
           }
         }
     array.recycle()

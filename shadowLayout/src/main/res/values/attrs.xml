@@ -7,5 +7,6 @@
     <attr format="dimension" name="shadowBottom"/>
     <attr format="dimension" name="radius"/>
     <attr format="dimension" name="blur"/>
+    <attr format="color" name="shadowColor"/>
   </declare-styleable>
 </resources>
